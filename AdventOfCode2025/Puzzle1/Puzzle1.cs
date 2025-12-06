@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2025.Puzzle1;
+﻿using AdventOfCode2025;
 
 public class Puzzle1 : Puzzle
 {
