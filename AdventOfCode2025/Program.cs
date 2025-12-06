@@ -1,71 +1,18 @@
 ﻿
-Puzzle1();
+using AdventOfCode2025.Puzzle1;
+
+var puzzle1 = new Puzzle1("Puzzle1\\input1.txt", 50);
+puzzle1.SolveFirstPart();
+puzzle1.SolveFirstPart();
+puzzle1.SolveSecondPart();
+puzzle1.SolveSecondPart();
+puzzle1.SolveFirstPart();
+puzzle1.SolveSecondPart();
+puzzle1.SolveFirstPart();
+puzzle1.SolveSecondPart();
 //Puzzle2();
 
-static void Puzzle1()
-{
-    string fileName = "C:\\Users\\florian.chmelar\\Desktop\\projects\\AdventOfCode2025\\AdventOfCode2025\\input1.txt";
-    string[] lines = File.ReadAllLines(fileName);
 
-    int presentNum = 50;
-    int zeroCounterEndOnly = 0;
-
-    foreach (string line in lines)
-    {
-        if (line.Length < 2)
-            continue;
-
-        bool isRight = line[0] == 'R';
-        int moveNum = int.Parse(line.Substring(1));
-
-        if (isRight)
-            presentNum += moveNum;
-        else
-            presentNum -= moveNum;
-
-        presentNum %= 100;
-
-        if (presentNum == 0)
-            zeroCounterEndOnly++;
-    }
-
-    Console.WriteLine($"zeroCounterEndOnly={zeroCounterEndOnly}");
-
-    presentNum = 50;
-    int startNum;
-    int zeroCounterTotal = 0;
-
-    foreach (string line in lines)
-    {
-        if (line.Length < 2)
-            continue;
-
-        startNum = presentNum;
-        bool isRight = line[0] == 'R';
-        int moveNum = int.Parse(line.Substring(1));
-
-        if (isRight)
-        {
-            presentNum += moveNum;
-            zeroCounterTotal += presentNum / 100;
-        }
-        else
-        {
-            presentNum -= moveNum;
-            zeroCounterTotal += Math.Abs(presentNum) / 100;
-        }
-
-        if (presentNum <= 0 && startNum != 0)
-            zeroCounterTotal++;
-
-        presentNum %= 100;
-
-        if (presentNum < 0)
-            presentNum += 100;
-    }
-
-    Console.WriteLine($"zeroCounterTotal={zeroCounterTotal}");
-}
 
 static void Puzzle2()
 {
