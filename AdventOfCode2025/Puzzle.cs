@@ -31,5 +31,8 @@ public abstract class Puzzle
         solveAction();
         stopwatch.Stop();
         Console.WriteLine($"Execution time: {stopwatch.ElapsedMilliseconds}ms\n");
+        Cleanup();
     }
+
+    protected abstract void Cleanup();
 }

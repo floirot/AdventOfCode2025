@@ -84,4 +84,9 @@ public class Puzzle2 : Puzzle
     {
         throw new NotImplementedException();
     }
+
+    protected override void Cleanup()
+    {
+        throw new NotImplementedException();
+    }
 }

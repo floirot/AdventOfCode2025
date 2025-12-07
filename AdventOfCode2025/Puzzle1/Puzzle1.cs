@@ -71,4 +71,9 @@ public class Puzzle1 : Puzzle
 
         Console.WriteLine($"Result of the second part = {zeroCounterTotal}");
     }
+
+    protected override void Cleanup()
+    {
+        throw new NotImplementedException();
+    }
 }
