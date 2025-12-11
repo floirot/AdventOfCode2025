@@ -34,5 +34,8 @@ public abstract class Puzzle
         Cleanup();
     }
 
-    protected abstract void Cleanup();
+    protected virtual void Cleanup()
+    {
+
+    }
 }

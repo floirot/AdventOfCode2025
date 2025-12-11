@@ -1,5 +1,4 @@
-using System.Runtime.CompilerServices;
-using AdventOfCode2025;
+namespace AdventOfCode2025;
 
 public class Puzzle3 : Puzzle
 {

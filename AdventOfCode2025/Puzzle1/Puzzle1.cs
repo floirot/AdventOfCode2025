@@ -1,4 +1,4 @@
-﻿using AdventOfCode2025;
+﻿namespace AdventOfCode2025;
 
 public class Puzzle1 : Puzzle
 {
