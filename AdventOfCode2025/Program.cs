@@ -12,8 +12,12 @@
 //var puzzle3 = new Puzzle3("Puzzle3\\input3.txt", 12);
 //puzzle3.SolveSecondPart();
 
-var puzzle8 = new Puzzle8("Puzzle8\\input8.txt");
-//puzzle8.SolveFirstPart();
-puzzle8.SolveSecondPart();
+// var puzzle8 = new Puzzle8("Puzzle8\\input8.txt");
+// //puzzle8.SolveFirstPart();
+// puzzle8.SolveSecondPart();
+
+var puzzle4 = new Puzzle4("Puzzle4/input4.txt", 3);
+//puzzle4.SolveFirstPart();
+puzzle4.SolveSecondPart();
 
 
